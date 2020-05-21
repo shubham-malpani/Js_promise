@@ -1,5 +1,5 @@
 
-const url = "http://127.0.0.1:8000/poll/camfeed/";
+const url = "http://api-url.com/;";
 
 var myHeaders = new Headers({
     "Content-Type": "application/json"
@@ -26,15 +26,7 @@ function onbtnClick(event) {
 var send = function (index, date_time) {
 
     let request = {
-        "camera_id": index,
-        "person_id": "12" + index,
-        "date": date_time,
-        "is_present": _.sample([false, false, true, false, false, true, false]),
-        "camera_details": "face_exists",
-        "message": "face found",
-        "face_cordinate": "[]",
-        "match_score": "Matched",
-        "person_image_url": ""
+       //payload
     }
 
     let requestOptions = {
